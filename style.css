@@ -1,0 +1,40 @@
+.wrap{
+  position: relative;
+  max-width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #8135D7;
+} 
+
+.slide {
+  transition: all .3s;
+  animation: slide 30s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, 0%);
+}
+
+.text {
+  display: block;
+  padding-right: 40px;
+  font-size: 62px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  color:#71D6B4;
+  text-align: center;
+  line-height: 10px;
+  white-space: nowrap;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  100% {
+    transform: translateX(-60%);
+  }
+}
